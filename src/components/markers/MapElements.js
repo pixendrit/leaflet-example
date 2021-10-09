@@ -3,7 +3,6 @@ import {
   LayersControl,
   Marker,
   Tooltip,
-  Polyline,
   TileLayer,
 } from "react-leaflet";
 import {
@@ -18,7 +17,6 @@ import {
   VILLAGE,
 } from "../consts";
 import { markers } from "../../data/markers";
-import { borders } from "../../data/borders";
 import MapMarker from "./MapMarker";
 
 const MapElements = ({ zoom, coords }) => {
@@ -48,14 +46,7 @@ const MapElements = ({ zoom, coords }) => {
       <LayersControl.BaseLayer checked name="Basemap">
         <TileLayer url="tiles/{z}/{x}/{y}.png" noWrap={true} />
       </LayersControl.BaseLayer>
-      <LayersControl.Overlay checked name="Borders" id="Borders">
-        <LayerGroup>
-          <Polyline
-            positions={borders}
-            pathOptions={{ color: "white", dashArray: "4" }}
-          />
-        </LayerGroup>
-      </LayersControl.Overlay>
+      
       <LayersControl.Overlay
         checked
         name="Civilized Locations"

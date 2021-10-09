@@ -6,7 +6,7 @@ import EventComponent from "./components/EventComponent";
 import MapElements from "./components/markers/MapElements";
 const App = () => {
   //Change this to match the highest number tile you generated
-  const ZOOM_LEVELS = 7;
+  const ZOOM_LEVELS = 4;
   //Change this to the zoom level you wish to start on
   const STARTING_ZOOM = 2;
   //Change this to the focal point of your map
@@ -33,7 +33,7 @@ const App = () => {
         <EventComponent updateZoom={updateZoom} updateCoords={updateCoords} />
         <AttributionControl
           position={"bottomright"}
-          prefix={"Icons from Game-icons.net"}
+          prefix={"Intercon - Të gjitha të drejtat e rezervuara"}
         />
       </MapContainer>
     </div>

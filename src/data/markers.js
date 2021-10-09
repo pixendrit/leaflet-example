@@ -1,11 +1,10 @@
 import {
   // CAVE,
   CITY,
-  // DUNGEON,
+  DUNGEON,
   // FORT,
   PORTAL,
   // TOWN,
-  UNKNOWN,
   // VILLAGE,
 } from "../components/consts";
 export const markers = [
@@ -15,14 +14,14 @@ export const markers = [
     location: [-90, 128],
     description: "",
     link: "",
-    major: false,
+    major: true,
   },
   {
-    name: "X mark",
-    type: UNKNOWN,
-    location: [-91, 128],
-    description: "We're Here",
-    link: "",
+    name: "Banesa nr1",
+    type: DUNGEON,
+    location: [-45, 36],
+    description: "72 m2",
+    link: "https://intercon-ks.com",
     major: false,
   },
   {

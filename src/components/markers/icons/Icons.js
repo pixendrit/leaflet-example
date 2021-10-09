@@ -48,7 +48,7 @@ export const determineIcon = ({ type, major }, zoom) => {
         return null;
       }
     case DUNGEON:
-      if (zoom >= NEAR || major) {
+      if (zoom >= 4 || 3 || 2 || 1 || 0) {
         return dungeon;
       } else {
         return null;
