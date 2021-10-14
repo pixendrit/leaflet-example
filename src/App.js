@@ -6,11 +6,11 @@ import EventComponent from "./components/EventComponent";
 import MapElements from "./components/markers/MapElements";
 const App = () => {
   //Change this to match the highest number tile you generated
-  const ZOOM_LEVELS = 4;
+  const ZOOM_LEVELS = 3;
   //Change this to the zoom level you wish to start on
   const STARTING_ZOOM = 2;
   //Change this to the focal point of your map
-  const CENTER_POINT = [0, 0];
+  const CENTER_POINT = [-94, 76];
 
   const [currentZoom, setZoomLevel] = useState(STARTING_ZOOM);
   const updateZoom = (newZoomLevel) => setZoomLevel(newZoomLevel);

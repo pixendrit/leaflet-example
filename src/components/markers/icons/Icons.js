@@ -9,7 +9,7 @@ import {
   GiVillage,
   GiWhiteTower,
   GiWindmill,
-  GiWoodenDoor,
+  GiDoor,
 } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import {
@@ -125,9 +125,9 @@ export const village = L.divIcon({
 export const dungeon = L.divIcon({
   className: "custom-icon",
   html: ReactDOMServer.renderToString(
-    <IconContext.Provider value={{ size: "2em" }}>
+    <IconContext.Provider value={{ size: "1.5em" }}>
       <div>
-        <GiWoodenDoor />
+        <GiDoor />
       </div>
     </IconContext.Provider>
   ),
