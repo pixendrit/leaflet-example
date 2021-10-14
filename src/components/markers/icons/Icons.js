@@ -11,6 +11,9 @@ import {
   GiWindmill,
   GiDoor,
 } from "react-icons/gi";
+
+import { IoEnter } from "react-icons/io5";
+
 import { IconContext } from "react-icons";
 import {
   CAVE,
@@ -25,6 +28,7 @@ import {
   TOWN,
   UNKNOWN,
   VILLAGE,
+  IKONA,
 } from "../../consts";
 
 export const determineIcon = ({ type, major }, zoom) => {
@@ -83,6 +87,12 @@ export const determineIcon = ({ type, major }, zoom) => {
       } else {
         return null;
       }
+    case IKONA:
+      if (zoom >= 4 || 3 || 2 || 1 || 0) {
+        return ikona;
+      } else {
+        return null;
+      }
     default:
       console.error("Invalid Type", type);
       return null;
@@ -132,6 +142,8 @@ export const dungeon = L.divIcon({
     </IconContext.Provider>
   ),
 });
+
+
 
 export const cave = L.divIcon({
   className: "custom-icon",
@@ -183,6 +195,17 @@ export const unknown = L.divIcon({
     <IconContext.Provider value={{ size: "2em" }}>
       <div>
         <GiCrossMark />
+      </div>
+    </IconContext.Provider>
+  ),
+});
+
+export const ikona = L.divIcon({
+  className: "custom-icon",
+  html: ReactDOMServer.renderToString(
+    <IconContext.Provider value={{ size: "24px", color: "#316879"  }}>
+      <div>
+        <IoEnter />
       </div>
     </IconContext.Provider>
   ),

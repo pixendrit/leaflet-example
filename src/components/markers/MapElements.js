@@ -13,6 +13,7 @@ import {
   TOWN,
   UNKNOWN,
   VILLAGE,
+  IKONA,
 } from "../consts";
 import { markers } from "../../data/markers";
 import MapMarker from "./MapMarker";
@@ -28,6 +29,7 @@ const MapElements = ({ zoom, coords }) => {
       case FARM:
         civilization.push(MapMarker({ marker, zoom, index }));
         break;
+      case IKONA:
       case DUNGEON:
       case CAVE:
       case UNKNOWN:

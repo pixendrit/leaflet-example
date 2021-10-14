@@ -8,6 +8,7 @@ export const FORT = "FORT";
 export const PORTAL = "PORTAL";
 export const TOWN = "TOWN";
 export const UNKNOWN = "UNKNOWN";
+export const IKONA = "IKONA";
 
 // Zoom Levels
 export const NEAR = 5;
