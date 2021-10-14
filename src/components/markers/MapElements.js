@@ -7,11 +7,9 @@ import {
 } from "react-leaflet";
 import {
   CAVE,
-  CITY,
   DUNGEON,
   FARM,
   FORT,
-  PORTAL,
   TOWN,
   UNKNOWN,
   VILLAGE,
@@ -24,14 +22,12 @@ const MapElements = ({ zoom, coords }) => {
   let wilderness = [];
   markers.forEach((marker, index) => {
     switch (marker.type) {
-      case CITY:
       case VILLAGE:
       case TOWN:
       case FORT:
       case FARM:
         civilization.push(MapMarker({ marker, zoom, index }));
         break;
-      case PORTAL:
       case DUNGEON:
       case CAVE:
       case UNKNOWN:
