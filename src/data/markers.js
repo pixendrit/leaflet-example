@@ -1,9 +1,9 @@
 import {
   // CAVE,
-  CITY,
+  // CITY,
   DUNGEON,
   // FORT,
-  PORTAL,
+  // PORTAL,
   // TOWN,
   // VILLAGE,
 } from "../components/consts";
