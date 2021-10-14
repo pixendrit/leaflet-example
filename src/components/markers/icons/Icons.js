@@ -12,7 +12,7 @@ import {
   GiDoor,
 } from "react-icons/gi";
 
-import { IoEnter } from "react-icons/io5";
+import { IoEnterOutline } from "react-icons/io5";
 
 import { IconContext } from "react-icons";
 import {
@@ -205,7 +205,7 @@ export const ikona = L.divIcon({
   html: ReactDOMServer.renderToString(
     <IconContext.Provider value={{ size: "24px", color: "#316879"  }}>
       <div>
-        <IoEnter />
+        <IoEnterOutline />
       </div>
     </IconContext.Provider>
   ),
